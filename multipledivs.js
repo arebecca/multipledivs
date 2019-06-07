@@ -1,7 +1,7 @@
-const increment = (() => {
-    let i = 0;
-    return () => i++;
-})();
+const increment = () => {
+ increment.counter = typeof increment.counter == 'undefined' ? 0 : increment.counter + 1;
+ return increment.counter;
+};
 const letters = '0123456789ABCDEF';
 const getRandomColor = () => [0, 1, 2, 3, 4, 5].reduce(acc => acc + letters[Math.floor(Math.random() * 16)], '#');
 
