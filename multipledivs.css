@@ -1,0 +1,19 @@
+div[id^="item_"] {
+    position: relative;
+    margin-top: 5px;
+    width: 300px;
+    height: 150px;
+}
+#buttons{
+    position: absolute;
+    top: 125px;
+    right: 0;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: #d9eaff;
+}
