@@ -4,7 +4,6 @@ class Item {
     }
 
     addItem = () => {
-        console.log(this.getRandomColor());
         const newItem = {};
         newItem.backgroundColor = this.getRandomColor();
         this.items.push(newItem);
@@ -14,7 +13,6 @@ class Item {
     drowItems = () => {
         document.getElementById('items').innerHTML = ' ';
         this.items.forEach((item, index) => {
-            console.log(index, 'baaaaa');
             const newDiv = document.createElement('div');
             newDiv.innerHTML = `<span id="buttons">
             <button type="button" onclick="addItem()">Add Item</button>
