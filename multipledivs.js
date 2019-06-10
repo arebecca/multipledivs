@@ -4,8 +4,9 @@ class Item {
     }
 
     addItem = () => {
-        const newItem = {};
-        newItem.backgroundColor = this.getRandomColor();
+        const newItem = {
+            backgroundColor: this.getRandomColor()
+        };
         this.items.push(newItem);
         this.drowItems();
     };
